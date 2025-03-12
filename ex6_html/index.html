@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Layout</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.header, .content, .signup, .feature {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.header {
+    background: #4a90e2;
+    color: white;
+}
+
+.content {
+    background: #f0f0f0;
+}
+
+.signup {
+    background: #a7c7e7;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature {
+    color: white;
+}
+
+.feature1 { background: #f4a261; }
+.feature2 { background: #a29bfe; }
+.feature3 { background: #e74c3c; }
+@media (min-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+       
+    }
+
+    .features {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .signup{
+        order:3;
+        width:50%;
+    }
+
+    .feature {
+        width: 50%;
+    }
+}
+@media (min-width: 1200px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .features {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .feature {
+        width: 30%;
+    }
+
+    .signup {
+        order: 2;
+        width:100%;
+    }
+
+    .content {
+        order: 3;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">HEADER</div>
+        <div class="content">CONTENT</div>
+        <div class="features">
+            <div class="feature feature1">FEATURE</div>
+            <div class="feature feature2">FEATURE</div>
+            <div class="feature feature3">FEATURE</div>
+            <div class="signup">SIGN UP</div>
+        </div>
+    </div>
+</body>
+</html>

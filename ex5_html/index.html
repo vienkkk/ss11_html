@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+        .child1, .child2, .child3 {
+            margin: 10px;
+        }
+        .child:nth-of-type(1) {
+            display: flex;
+            height: 100px;
+        }
+        .child:nth-of-type(1) .child1:nth-of-type(2) {
+            display: none;
+        }
+        .child:nth-of-type(1) .child1:nth-of-type(1) {
+            width: 20%;
+            color: red;
+            font-size: 60px;
+        }
+        .child:nth-of-type(1) .child1:nth-of-type(3) {
+            width: 100%;
+            font-size: 60px;
+            background-color: red;
+            color: aliceblue;
+        }
+        .child:nth-of-type(2) {
+            display: flex;
+            height: 300px;
+        }
+        .child:nth-of-type(2) .child2:nth-of-type(1) {
+            width: 70%;
+            font-size: 60px;
+            background-color: red;
+            color: aliceblue;
+        }
+        .child:nth-of-type(2) .child2:nth-of-type(2) {
+            width: 30%;
+            font-size: 60px;
+            background-color: red;
+            color: aliceblue;
+        }
+        .child:nth-of-type(3) {
+            display: flex;
+            flex-wrap: wrap;
+            height: 200px;
+            align-items: flex-start;
+        }
+        .child3 {
+            width: 32%;
+            font-size: 60px;
+            background-color: red;
+            color: aliceblue;
+        }
+        @media only screen and (min-width: 768px) and (max-width: 1200px) {
+            .child1, .child2, .child3 {
+                margin: 10px;
+            }
+            .child:nth-of-type(1) {
+                display: flex;
+                height: 100px;
+            }
+            .child:nth-of-type(1) .child1:nth-of-type(2) {
+                display: none;
+            }
+            .child:nth-of-type(1) .child1:nth-of-type(1) {
+                width: 20%;
+                color: red;
+                font-size: 60px;
+            }
+            .child:nth-of-type(1) .child1:nth-of-type(3) {
+                width: 80%;
+                font-size: 60px;
+                background-color: red;
+                color: aliceblue;
+            }
+            .child:nth-of-type(2) {
+                display: flex;
+                flex-wrap: wrap;
+                height: 300px;
+            }
+            .child:nth-of-type(2) .child2:nth-of-type(1) {
+                width: 100%;
+                font-size: 60px;
+                background-color: red;
+                color: aliceblue;
+            }
+            .child:nth-of-type(2) .child2:nth-of-type(2) {
+                width: 100%;
+                font-size: 60px;
+                background-color: red;
+                color: aliceblue;
+            }
+            .child:nth-of-type(3) {
+                display: flex;
+                flex-wrap: wrap;
+                height: 200px;
+                align-items: flex-start;
+            }
+            .child3 {
+                width: 45%;
+                font-size: 60px;
+                background-color: red;
+                color: aliceblue;
+            }
+            .child:nth-of-type(3) .child3:nth-of-type(5),
+            .child:nth-of-type(3) .child3:nth-of-type(6) {
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 768px) {
+            .child:nth-of-type(2) .child2:nth-of-type(2),
+            .child:nth-of-type(3) {
+                display: none;
+            }
+            .child:nth-of-type(1) {
+                margin: 10px;
+                height:200px;
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .child:nth-of-type(1) .child1:nth-of-type(2) {
+                width: 10%;
+                display: block; 
+                font-size: 60px;
+                text-align: center;
+                background-color: rgb(255, 0, 0);
+                color:aliceblue;
+            }
+            .child:nth-of-type(1) .child1:nth-of-type(1) {
+                width: 80%;
+            }
+            .child:nth-of-type(2) {
+                display: flex;
+                flex-wrap: wrap;
+                height: 300px;
+            }
+            .child:nth-of-type(2) .child2:nth-of-type(1){
+                width:100%;
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="child">
+        <div class="child1">LOGO</div>
+        <div class="child1">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="child1">#nav</div>
+    </div>
+    <div class="child">
+        <div class="child2">#main</div>
+        <div class="child2">#aside</div>
+    </div>
+    <div class="child">
+        <div class="child3">Column1</div>
+        <div class="child3">Column2</div>
+        <div class="child3">Column3</div>
+        <div class="child3">Column4</div>
+        <div class="child3">Column5</div>
+        <div class="child3">Column6</div>
+    </div>
+</body>
+</html>
