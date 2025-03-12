@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            border-radius: 10px;
+            color:aliceblue;
+            text-align: center;
+        }
+        body .child:nth-of-type(1) {
+            margin: 5px;
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+        body .child:nth-of-type(2) {
+            display: flex;
+        }
+        .child .child1:nth-of-type(1) {
+            background-color: green;
+            margin: 5px;
+            width: 30%;
+        }
+        .child .child1:nth-of-type(2) {
+            background-color: yellow;
+            margin: 5px;
+            width: 40%;
+            height: 20%;
+        }
+        .child .child1:nth-of-type(3) {
+            background-color: pink;
+            margin: 5px;
+            width: 30%;
+        }
+        body .child:nth-of-type(3) {
+            background-color: blue;
+            width: 100%;
+            height: 200px;
+            margin: 5px;
+        }
+        @media only screen and (max-width: 1024px) {
+            body .child:nth-of-type(1) {
+            margin: 5px;
+            width: 100%;
+            height: 100px;
+            background-color: red;
+        }
+        body .child:nth-of-type(2) {
+            flex-direction: column; 
+        }
+        .child .child1:nth-of-type(1) {
+            background-color: green;
+            margin: 5px;
+            width: 100%;
+            height:90px;
+        }
+        .child .child1:nth-of-type(2) {
+            background-color: yellow;
+            margin: 5px;
+            width: 100%;
+        }
+        .child .child1:nth-of-type(3) {
+            background-color: pink;
+            margin: 5px;
+            width: 100%;
+            height:90px;
+        }
+        body .child:nth-of-type(3) {
+            background-color: blue;
+            width: 100%;
+            height: 80px;
+            margin: 5px;
+        }
+}
+    </style>
+</head>
+<body>
+    <div class="child">Header</div>
+    <div class="child">
+        <div class="child1">Slidebar 1</div>
+        <div class="child1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod quibusdam eaque a architecto dolor ad delectus! Neque asperiores praesentium dicta, nihil unde debitis, ut harum quod ducimus, quibusdam commodi quia? Voluptatum, tenetur laudantium, amet molestias nobis voluptas exercitationem harum repudiandae dolores illum hic itaque facere cum eum? Est consectetur dolorem repellat, magni, ex sed aliquid rem esse quisquam sit aperiam? Consectetur dolore earum consequatur quam. Accusamus facilis autem quibusdam doloremque assumenda cupiditate dolore, natus ipsam? Placeat, dolorum deleniti, asperiores, est odit nihil aperiam qui libero reiciendis dignissimos aspernatur autem itaque. Placeat culpa harum sit, maiores architecto consequuntur blanditiis porro! Dignissimos eaque, odio, provident illo tempore, pariatur iure qui natus quae temporibus non eveniet maxime esse ab obcaecati facilis aliquam facere. Facilis asperiores ut facere quas corrupti doloribus magni quaerat voluptate! Tenetur quo libero nulla sunt magni quisquam officia quasi itaque deleniti dolores? Quos ad eligendi nemo fugit distinctio eos asperiores!</div>
+        <div class="child1">Slidebar 2</div>
+    </div>
+    <div class="child">Footer</div>
+</body>
+</html>
